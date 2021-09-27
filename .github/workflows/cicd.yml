@@ -28,9 +28,6 @@ jobs:
         python: ['3.7', '3.8', '3.9']
         operatingSystem: ['ubuntu-latest','windows-latest','macos-latest']
     runs-on: ${{ matrix.operatingSystem }} # choose the OS for running the action
-    strategy:
-      matrix: 
-        python: ['3.7', '3.8', '3.9']
     env:
       PYTHON: ${{ matrix.python }}
     # define the individual sequential steps to be run
